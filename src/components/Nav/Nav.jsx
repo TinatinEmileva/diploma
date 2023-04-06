@@ -6,7 +6,7 @@ export default function Nav(){
     <nav className="Nav">
     <NavLink to="/">Home</NavLink>
     <NavLink to="/about">About</NavLink>
-   
+    <NavLink to="/contacts">Cantacts</NavLink>
   </nav>
   );
 }
