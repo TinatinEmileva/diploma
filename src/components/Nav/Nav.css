@@ -1,0 +1,12 @@
+.Nav ul{
+
+display: flex;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.Nav ul li a{
+  color: brown;
+  padding: 10px;
+  display: block;
+}
