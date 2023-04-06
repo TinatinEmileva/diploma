@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
+import About from "./pages/About";
+import Cantacts from "./pages/Cantacts";
+import Delivery from "./pages/Delivery";
 import Home from "./pages/Home";
 
 function App() {
@@ -9,8 +12,9 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<h2> About </h2>} />
-          <Route path="/contacts" element={<h2>Cantacts</h2>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contacts" element={<Cantacts/>} />
+          <Route path="/Delivery" element={<Delivery/>}/>
         </Routes>
       </Layout>
     </div>
