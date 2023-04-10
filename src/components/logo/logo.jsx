@@ -1,9 +1,13 @@
 import "./Logo.css";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/vite.svg";
 
-export default  function Logo(){
-  return(
+export default function Logo() {
+  return (
     <div className="Logo">
-      <img src={logo} alt="Website logo" />   
-       </div>
+      <NavLink to="/">
+        <img src={logo} alt="Website logo" />
+      </NavLink>
+    </div>
   );
 }
