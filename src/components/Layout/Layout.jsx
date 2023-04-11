@@ -9,7 +9,7 @@ export default function Layout(props) {
         <Logo/>
         <Nav />
       </header>
-      <aside>ASIDE</aside>
+      <aside>Category</aside>
       <main>{props.children}</main>
       <footer>FOOTER</footer>
     </div>

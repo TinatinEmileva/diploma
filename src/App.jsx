@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 import About from "./pages/About";
 import Cantacts from "./pages/Cantacts";
+import Category from "./pages/Category";
 import Delivery from "./pages/Delivery";
 import Storage from "./pages/Storage";
 
@@ -14,7 +15,8 @@ function App() {
           <Route path="/" element={<Storage/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contacts" element={<Cantacts/>} />
-          <Route path="/Delivery" element={<Delivery/>}/>
+          <Route path="/Delivery" element={<Delivery />}/>
+          <Route path="/category/:path" element={<Category/>}/>
         </Routes>
       </Layout>
     </div>
