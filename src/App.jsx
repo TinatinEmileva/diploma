@@ -1,26 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import Layout from "./components/Layout/Layout";
-import About from "./pages/About";
-import Cantacts from "./pages/Cantacts";
+import Home from "./pages/Home";
 import Category from "./pages/Category";
-import Delivery from "./pages/Delivery";
-import Storage from "./pages/Storage";
+import { createContext, useEffect, useState } from "react";
+import { getDocs } from "firebase/firestore";
+import { categoryCollection, onAuthChange, orderCollection, productCollection } from "./firebase";
+import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
+import Product from "./pages/Product";
+import ThankYou from "./pages/ThankYou";
+import Orders from "./pages/Orders";
 
-function App() {
-  return (
-    <div className="App">
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Storage/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/contacts" element={<Cantacts/>} />
-          <Route path="/Delivery" element={<Delivery />}/>
-          <Route path="/category/:path" element={<Category/>}/>
-        </Routes>
-      </Layout>
-    </div>
- 
 export const AppContext = createContext({
   categories: [],
   products: [],
@@ -131,7 +121,4 @@ export default function App() {
           </Routes>
         </Layout>
       </AppContext.Provider>
-    </div>
-  );
-}
-
+    </div
