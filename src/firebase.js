@@ -17,5 +17,14 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
 
-export const categoryCollection = collection (db, 'categories');
+// получить список категорий (коллекция документов).
+export const categoryCollection = collection(db, 'categories');
+export const productCollection = collection(db, 'products');
+export const orderCollection = collection(db, 'orders');
+
+const provider = new GoogleAuthProvider();
+export const logIn = () => signInWithPopup(auth, provider);
+export const logOut = () => signOut(auth);
+export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
