@@ -21,7 +21,7 @@ function App() {
       </Layout>
     </div>
  
- export const AppContext = createContext({
+export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
@@ -135,10 +135,3 @@ export default function App() {
   );
 }
 
-
-
-
-  );
-}
-
-export default App;
