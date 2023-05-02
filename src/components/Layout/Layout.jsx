@@ -1,9 +1,9 @@
-import Category from "../../pages/Category";
+import Auth from "../Auth/Auth";
+import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
-import Logo from "../logo/logo";
+import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
-
 
 export default function Layout(props) {
   return (
@@ -11,13 +11,18 @@ export default function Layout(props) {
       <header>
         <Logo />
         <Nav />
+        <CartLink />
+        <Auth />
       </header>
       <aside>
-        <Category />
         <CategoryList />
       </aside>
-      <main>{props.children}</main>
-      <footer>FOOTER</footer>
+      <main>
+        {props.children}
+      </main>
+      <footer>
+        FOOTER
+      </footer>
     </div>
   );
 }

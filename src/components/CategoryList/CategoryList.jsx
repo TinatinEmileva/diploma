@@ -1,34 +1,24 @@
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { getDocs } from "firebase/firestore";
-import { categoryCollection } from "../../firebase";
+import { useContext, useEffect, useState } from "react";
 import "./CategoryList.css";
-export default function Category() {
-  const [categories, setCatigories] = useState([]);
+import { NavLink } from "react-router-dom";
+import { AppContext } from "../../App";
 
-  useEffect(() => {
-    getDocs(categoryCollection).then((snapshot) => {
-      const newCategories = [];
+export default function CategoryList() {
+  const { categories } = useContext(AppContext);
 
-      snapshot.docs.forEach((doc) => {
-        const category = doc.data();
-        category.id = doc.id;
-
-        newCategories.push(category);
-      });
-      setCatigories(newCategories);
-    });
-  }, []);
-
-  const output = categories.map((category) => (
+  const output = categories.map(category => (
     <li key={category.id}>
-      <NavLink to={"/category/" + category.path}>{category.name}</NavLink>
+      <NavLink to={'/category/' + category.path}>
+        {category.name}
+      </NavLink>
     </li>
   ));
 
   return (
     <div className="CategoryList">
-      <ul>{output}</ul>
+      <ul>
+        {output}
+      </ul>
     </div>
   );
 }
