@@ -3,7 +3,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import { createContext, useEffect, useState } from "react";
-import { categoryCollection, onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad, orderCollection, productCollection } from "./firebase";
+import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from "./firebase";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
@@ -50,7 +50,6 @@ export default function App() {
     });
   }, []);
 
-
   return (
     <div className="App">
       <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
@@ -69,7 +68,5 @@ export default function App() {
         </Layout>
       </AppContext.Provider>
     </div>
-
-    
-     );
-    }
+  );
+}
