@@ -29,7 +29,7 @@ export const storage = getStorage(app);
 
 // получить список категорий (коллекция документов).
 export const categoryCollection = collection(db, "categories");
-export const productCollection = collection(db, "product");
+export const productCollection = collection(db, "products");
 export const orderCollection = collection(db, "orders");
 
 const provider = new GoogleAuthProvider();
@@ -66,10 +66,13 @@ export const onOrdersLoad = (callback) =>
   );
 
 // отправка фотографии и получение ее url
-export const uploadProductPhoto = async (file) => {
+export const uploadProductPhoto = (file) => {
   const storageRef = ref(storage, `products/${file.name}`);
-  await uploadBytes(storageRef, file);
-
-  const url = await getDownloadURL(storageRef);
-  return url;
+  return uploadBytes(storageRef, file)
+    .then(() => {
+      return getDownloadURL(storageRef);
+    })
+    .catch((error) => {
+      console.log("Failed to upload product photo:", error);
+    });
 };
