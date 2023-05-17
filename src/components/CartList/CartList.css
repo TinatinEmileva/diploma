@@ -1,5 +1,5 @@
 .CartList {
-  display: flex;
+  display: block;
   align-items: center;
 }
 
