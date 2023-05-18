@@ -1,4 +1,9 @@
 .CategoryList ul{
  display:inline-block;
+ font-style: normal;
+ font-size: 15px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+ list-style-type: none;
+ text-decoration: none;
 
 }
