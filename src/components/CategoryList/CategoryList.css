@@ -1,9 +1,23 @@
 .CategoryList ul{
  display:inline-block;
  font-style: normal;
- font-size: 15px;
+ font-size: 10px;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
  list-style-type: none;
  text-decoration: none;
+ margin: 10px auto;
+ text-shadow:  1px 1px 1px silver
+ 2px 2px 1px skyblue;
 
+
+}
+ul.line-through{
+ font-size: 25px;
+ width: 200;
+ height: 40px;
+ line-height: 2;
+ border-radius: 5px;
+}
+ul.line-through:hover{
+ color: black;
 }

@@ -1,8 +1,17 @@
+.ProductList{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 .ProductList .Product {
   display: flex;
   flex-direction: column;
   max-width: 200px;
+  margin: 10px;
+ 
 }
+
 .ProductList .Product img {
   width: 100%;
+  border-radius: 10px;
 }

@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
-import About from "./pages/Home";
+import About from "./pages/About"
 import Delivery from "./pages/Delivery";
 
 export const AppContext = createContext({

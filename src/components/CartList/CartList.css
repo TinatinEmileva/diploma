@@ -2,6 +2,9 @@
   display: block;
   align-items: center;
 }
+.CartList ul {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .CartList .CartItem img {
   width: 80px;

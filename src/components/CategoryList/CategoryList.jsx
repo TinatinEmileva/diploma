@@ -19,8 +19,10 @@ export default function CategoryList() {
 
   return (
     <div className="CategoryList">
-      <ul>
+      <ul className="line-through">
+       
         {output}
+        
       </ul>
       <AddCategory />
     </div>

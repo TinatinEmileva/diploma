@@ -1,9 +1,12 @@
+import "./About.css"
 export default function About(){
   return(
     <div className="About">
-    <h1>abouut</h1>
-    <p>This is our awesome Furniture shop.</p>
-    <p>We only use naturel ingredients to make our furniture. </p>
+      <div className="container">
+       <div className="text-about">
+     <video src="https://www.shatura.com/upload/iblock/b4d/efbrjzlarzb5gq8ab99l3uyw2926yhqa.mp4"></video>
+      </div>
+      </div>
     </div>
   );
 }
