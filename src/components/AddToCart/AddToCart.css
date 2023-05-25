@@ -1,0 +1,18 @@
+.AddToCart{
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid slategrey;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0/2s;
+  margin-top: 40px;
+}
+.AddToCart:hover{
+  border: 1px solid skyblue;
+  background-color: #4c9aa4;
+  color: #fff;
+}
