@@ -16,11 +16,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-70%, -25%);
+  transform: translate(-20%, -15%);
   color: rgb(0, 0, 0);
-  background-color: rgba(201, 225, 235, 0.582);
+  background-color: rgba(201, 225, 235, 0);
   padding: 10px;
   border-radius: 5px;
   font-family: 'Outfit', sans-serif;
- border: 5px solid rgba(185, 211, 221, 0.623);
+
+}
+ .phone{
+  color: black;
+  text-decoration: none;
+    padding: 3px;
+    font-size: 25px;
+    font-family: 'trebuchet ms',geneva;
 }
