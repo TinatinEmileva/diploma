@@ -7,9 +7,13 @@
  text-decoration: none;
  margin: 10px auto;
  text-shadow:  1px 1px 1px silver
- 2px 2px 1px skyblue;
+ 2px 2px 1px rgb(52, 179, 230);
 
 
+}
+.CategoryList .line-through a{
+  padding: 10px;
+  text-decoration: none;
 }
 ul.line-through{
  font-size: 25px;
@@ -20,4 +24,8 @@ ul.line-through{
 }
 ul.line-through:hover{
  color: black;
+ 
+
+
+
 }
