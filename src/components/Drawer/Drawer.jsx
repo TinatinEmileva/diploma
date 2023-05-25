@@ -1,4 +1,4 @@
-import Logo from "../ui/Logo/Logo";
+import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
 import "./Drawer.css";
 
