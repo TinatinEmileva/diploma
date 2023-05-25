@@ -27,7 +27,8 @@
   
 }
 .Product:hover{
-  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+  box-shadow: 4px 8px 16px grey;
+
 }
 .card-top{
   flex: 0 0 220PX;

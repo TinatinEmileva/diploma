@@ -6,7 +6,7 @@ import Nav from "../Nav/Nav";
 import "./Layout.css";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
-import Logo from "../Logo/Logo";
+import Logo from "../ui/Logo/Logo";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,8 +21,8 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-          <CartLink />
-          <Auth />
+        <CartLink />
+        <Auth />
       </header>
       <aside>
         <CategoryList />

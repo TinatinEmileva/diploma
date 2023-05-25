@@ -1,6 +1,6 @@
-import "./Logo.css";
-import { NavLink } from "react-router-dom";
 
+import { NavLink } from "react-router-dom";
+import "./Logo.css";
 export default function Logo() {
   return (
     <div className="Logo">
