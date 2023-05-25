@@ -1,18 +1,16 @@
-.AddToCart{
-  display: block;
-  width: 100%;
-  font-weight: 400;
-  font-size: 17px;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid slategrey;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0/2s;
-  margin-top: 40px;
-}
-.AddToCart:hover{
-  border: 1px solid skyblue;
+.AddToCart button {
+  margin-right: auto;
+  position: relative;
   background-color: #4c9aa4;
-  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
