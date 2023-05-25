@@ -73,6 +73,7 @@ export default function AddProduct({ category }) {
           />
         </label>
         <label>
+          <div className="card-price">
           Price:
           <input
             type="number"
@@ -82,6 +83,7 @@ export default function AddProduct({ category }) {
             min={0}
             required
           />
+          </div>
         </label>
         <label>
           Picture:
