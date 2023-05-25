@@ -1,0 +1,8 @@
+.Delivery img{
+  display: block;
+ margin: 0 auto;
+ border-radius: 5px;
+ width: 100%;
+ height: auto; 
+ box-shadow: 5px 3px 5px 3px rgb(201, 225, 235); 
+}

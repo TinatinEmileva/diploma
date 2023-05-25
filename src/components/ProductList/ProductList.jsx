@@ -13,12 +13,16 @@ export default function ProductList({ category }) {
   .filter(product => product.category === category.id)
   .map(product => (
     <div className="Product" key={product.id}>
+      <div className="card-top">
+        <a href="#" className="card-img">
       <img src={product.picture} alt={product.name} />
-      <Link to={"/product/" + product.path}>
+      </a>
+      <Link className="card-title" to={"/product/" + product.path}>
         {product.name}
       </Link>
       <AddToCart product={product} />
       <DeleteProduct product={product} />
+    </div>
     </div>
   ));
 

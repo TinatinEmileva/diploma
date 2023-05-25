@@ -1,9 +1,9 @@
-.Home {
+.NotFound {
   
   border-radius: 10px;
   padding: 10px;
 }
- .Home img {
+ .NotFound img {
   display: block;
  margin: 0 auto;
  border-radius: 5px;
@@ -12,7 +12,7 @@
  box-shadow: 5px 3px 5px 3px rgb(201, 225, 235);
  
 }
-.text-home{
+.text-notfound{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,4 +24,3 @@
   font-family: 'Outfit', sans-serif;
  border: 5px solid rgba(185, 211, 221, 0.623);
 }
-
