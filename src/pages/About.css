@@ -13,3 +13,9 @@
  border-radius: 5px;
 
 }
+.About .text-about{
+  font-family: 'Outfit', sans-serif;
+  background-color: rgba(127, 146, 255, 0.151);
+  border-radius: 5px;
+  box-shadow: 1px 3px 1px 3px rgba(74, 123, 143, 0.5);
+}
