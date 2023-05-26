@@ -22,11 +22,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h4 className="footer-heading">Categories</h4>
           <ul className="footer-list">{output}</ul>
         </div>
         <div className="footer-categories">
-          <h4 className="footer-heading">Menus</h4>
           <ul className="footer-list">
             <li>
               <NavLink to="/" onClick={scrollToTop}>Home</NavLink >
@@ -46,7 +44,6 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-column">
-          <h4 className="footer-heading">Our data</h4>
           <div className="directions-to-administrator">
             <Link
               className="phone"
